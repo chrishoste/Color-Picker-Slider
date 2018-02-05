@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Slider" customModule="customSlider" customModuleProvider="target">
+            <connections>
+                <outlet property="sliderView" destination="Prz-z4-vII" id="Jeh-3C-2TJ"/>
+                <outlet property="thumbView" destination="c0L-h2-ggp" id="rtT-da-RoJ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="57" height="347"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Prz-z4-vII">
+                    <rect key="frame" x="4" y="0.0" width="49" height="347"/>
+                    <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c0L-h2-ggp">
+                    <rect key="frame" x="0.0" y="144.5" width="57" height="57"/>
+                    <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="c0L-h2-ggp" secondAttribute="height" multiplier="1:1" id="3yL-W4-cPi"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="c0L-h2-ggp" firstAttribute="centerY" secondItem="Prz-z4-vII" secondAttribute="centerY" id="7HF-ma-g61"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Prz-z4-vII" secondAttribute="bottom" id="ARC-RT-M2l"/>
+                <constraint firstItem="c0L-h2-ggp" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Cle-Oo-Bvt"/>
+                <constraint firstItem="Prz-z4-vII" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="NgF-DR-htJ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Prz-z4-vII" secondAttribute="trailing" constant="4" id="qRp-w7-mfu"/>
+                <constraint firstItem="c0L-h2-ggp" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="x0y-La-Vj3"/>
+                <constraint firstItem="Prz-z4-vII" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="4" id="xbg-os-uBv"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-65.5" y="-99.5"/>
+        </view>
+    </objects>
+</document>
